@@ -2,7 +2,7 @@
 #+author: Xiaoxing Hu
 #+occupation: Software Engineer
 #+location: New Zealand
-#+email: xiaoxing@huxx.org
+#+email: hi@xiaoxing.dev
 #+tel: 021 504 155
 #+github: xiaoxinghu
 #+website: https://huxiaoxing.com
