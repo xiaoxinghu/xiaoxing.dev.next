@@ -1,0 +1,104 @@
+#+title: Xiaoxing Hu
+#+author: Xiaoxing Hu
+#+occupation: Software Engineer
+#+location: New Zealand
+#+email: xiaoxing@huxx.org
+#+tel: 021 504 155
+#+github: xiaoxinghu
+#+website: https://huxiaoxing.com
+#+linkedin: xiaoxinghu
+#+photo: /photo.png
+#+layout: ../layout/resume
+#+jsx: import Time from '../components/time'
+
+** About Me
+
+I am a full-stack software engineer with over 15 years of professional experience. Good at delivering high-quality code that is well tested and low-maintenance. My recent focus is on cutting development costs by leveraging automation.
+
+** Experiences
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: p-experince
+:END:
+
+*** Senior Software Engineer in Test · [[https://www.nib.co.nz][nib]] =Auckland=
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: h-event
+:END:
+#+jsx: <Time start='2019'/>
+I am leading the effort to implement the next generation testing strategy for the serverless era. A better gate keeping mechanism to maximize confidence and minimize human error.
+
+- unit test style UI testing for React apps
+- contract testing via [[https://docs.pact.io][Pact]] to safeguard microservices
+- dockerizing the build -> test -> ship pipeline
+
+*** Software Engineer in Test Techlead · [[https://www.fiserv.com][Fiserv]] =Auckland=
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: h-event
+:END:
+#+jsx: <Time start='2013' end='2019'/>
+I implemented the automated testing framework for the mobile banking apps that services millions of customers.
+- It's efficiency releases human labour from heavy manual testing work.
+- The app store ratings increased dramatically (from low 2 to high 4) as a result.
+
+*** Senior Software Developer · [[http://www.sinosoft.com.cn][Sinosoft]] =Beijing=
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: h-event
+:END:
+#+jsx: <Time start='2007' end='2011'/>
+I led a small team of developers taking countless technical challenges from big data processing system to software that runs on highly customized Linux kernel for specialized hardware.
+
+** Skills
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: page-break-before
+:END:
+
+*** Web Development
+
+I am passionate about web technology, the most exciting and innovative area of the tech world. [[https://github.com/orgapp/orgajs][orgajs]] is one of my popular open source project, a syntax parser for org-mode.
+
+#+attr_html: :class skills
+- react
+- webpack
+- babel
+- redux
+- gatsby
+- nextjs
+- ruby on rails
+
+*** Mobile Development
+I am a proficient (=swift=) iOS developer. I have built a couple of apps myself ([[https://apps.apple.com/nz/app/voice-to-text/id1492366309][Voice]] - transcribe voice into text, [[https://apps.apple.com/nz/app/timetime/id1560784121][TimeTime]] - visualize time elapsing).
+
+#+attr_html: :class skills
+- swift
+- swiftUI
+- UIKit
+- React Native
+
+*** Other Kind of Development
+I wrote frameworks that simplify lifes, tools that visualize data, compilers that parse syntax, services that run in the cloud...
+
+#+attr_html: :class skills
+- Emacs
+- Python
+- Ruby
+- C/C++
+- C#
+- Firebase
+- MongoDB
+- AWS ecosystem
+
+** Education
+
+*** University of Auckland
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: h-event
+:END:
+#+jsx: <Time start='2012' end='2013'/>
+*Master*, Software Engineer
+
+*** Liaoning University
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: h-event
+:END:
+#+jsx: <Time start='2003' end='2007'/>
+*Bachelor's degree*, Computer Science

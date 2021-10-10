@@ -1,0 +1,3 @@
+#+title: xiaoxing.dev
+
+This is my CV/resume.
