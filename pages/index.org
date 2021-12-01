@@ -1,4 +1,5 @@
 #+title: Xiaoxing Hu
+#+description: The Digital Craftsman.
 #+author: Xiaoxing Hu
 #+occupation: Software Engineer
 #+location: New Zealand
@@ -7,7 +8,7 @@
 #+github: xiaoxinghu
 #+website: https://huxiaoxing.com
 #+linkedin: xiaoxinghu
-#+photo: /photo.png
+#+photo: ../assets/photo.jpg
 #+layout: ../layout/resume
 #+jsx: import Time from '../components/time'
 

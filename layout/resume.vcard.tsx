@@ -1,16 +1,16 @@
 /** @jsxImportSource theme-ui */
 import Image from 'next/image'
-import type { FC } from 'react'
 import { FaEnvelope, FaGithub, FaGlobe, FaLinkedin, FaPhone } from 'react-icons/fa'
 import { Box, Flex, Heading, Link, Text } from 'theme-ui'
-import photo from '../public/photo.jpeg'
+import photo from '../assets/photo.jpg'
 
 type ContactInfoType = 'email' | 'website' | 'github' | 'linkedin' | 'tel'
 
 type ContactInfo = Record<ContactInfoType, string>
 
 interface Props extends Partial<ContactInfo> {
-  title: string
+  name: string
+  photo: string
   occupation?: string
   location?: string
 }
@@ -33,11 +33,7 @@ const HrefMap: Record<ContactInfoType, (value: string) => string> = {
   tel: v => `tel:${v}`,
 }
 
-const ContactLink: FC<{
-  type: ContactInfoType,
-  value: string,
-}> = ({ type, value }) => {
-
+const ContactLink = ({ type, value }: { type: ContactInfoType, value: string }) => {
   return (
     <Link href={HrefMap[type](value)} sx={{
       display: 'flex',
@@ -50,8 +46,8 @@ const ContactLink: FC<{
   )
 }
 
-const VCard: FC<Props> = ({
-  title,
+const VCard  = ({
+  name,
   occupation,
   location,
   email,
@@ -59,7 +55,7 @@ const VCard: FC<Props> = ({
   website,
   linkedin,
   tel,
-}) => {
+}: Props) => {
 
   return (
     <Flex as='header'
@@ -81,7 +77,7 @@ const VCard: FC<Props> = ({
         border: '5px solid gold',
         borderColor: 'highlight',
       }}>
-        <Image src={photo} alt={title} width={200} height={200}
+        <Image src={photo} alt={name} width={200} height={200}
           className='u-photo'
           sx={{
             borderRadius: '50%',
@@ -89,7 +85,7 @@ const VCard: FC<Props> = ({
         />
       </Box>
       <Box sx={{ px: '1em' }}>
-        <Heading as='h1' className='p-name' variant='display' sx={{ mt: 0 }}>{title}</Heading>
+        <Heading as='h1' className='p-name' variant='display' sx={{ mt: 0 }}>{name}</Heading>
         {occupation && <Text className='p-job-title' sx={{ color: 'gray' }}>
           {occupation}
           {location &&
