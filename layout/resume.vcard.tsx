@@ -10,7 +10,6 @@ type ContactInfo = Record<ContactInfoType, string>
 
 interface Props extends Partial<ContactInfo> {
   name: string
-  photo: string
   occupation?: string
   location?: string
 }
